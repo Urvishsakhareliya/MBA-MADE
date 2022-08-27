@@ -1,0 +1,446 @@
+/*
+=======================================================================
+                        media Query
+=======================================================================
+*/
+
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  html {
+    font-size: 9px;
+  }
+
+  .footer-logo-content {
+    padding: 0 1rem;
+  }
+
+  /* --------04 - Login Page ------- */
+  .login-page .round-red {
+    position: absolute;
+    top: 14%;
+    right: 26%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  html {
+    font-size: 9px;
+  }
+
+  .main-Banner {
+    height: 33rem;
+  }
+
+  /* --------04 - Login -------- */
+  .login-page .full-form-row {
+    margin-top: -10rem;
+    /* position: relative; */
+  }
+
+  .login-page .round-red {
+    position: absolute;
+    top: 90px;
+    right: 190px;
+    height: 246px;
+  }
+
+  /* ----------------- 06 - Home ----------------- */
+  .HomePage .NetworkJobs-list {
+    padding: 1rem;
+  }
+
+  .HomePage .OVERALLSCORE-btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 8px;
+  }
+
+  .main-Banner {
+    height: 30rem;
+  }
+
+  .nav-link {
+    padding: 1rem 1rem;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .Full-form-box {
+    margin-top: -16rem;
+  }
+
+  /* -------04 - Login --------- */
+  .login-page .round-red {
+    position: absolute;
+    top: 80px;
+    right: 210px;
+    height: 140px;
+  }
+
+  /* ----------------- 05 - Home ----------------- */
+  .HomePage .jobCard-content {
+    width: 100%;
+  }
+  .HomePage .userImg::before {
+    height: 110px;
+  }
+  .HomePage .JobCard:last-child .userImg::before {
+    height: 0;
+  }
+
+  .HomePage .Network-Jobs {
+    margin-top: 4rem;
+  }
+
+  /* -------------- 06 - Job Details -------- */
+  .HomePage .jobCard-content {
+    width: 100%;
+  }
+  .HomePage .userImg::before {
+    height: 110px;
+  }
+  .HomePage .JobCard:last-child .userImg::before {
+    height: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 8px;
+  }
+
+  .right-nav .search {
+    top: -5px;
+    right: 100%;
+  }
+
+  .right-nav .search:focus {
+    width: 30rem;
+    box-shadow: none;
+    border: 1px solid rgba(85, 85, 85, 40%);
+  }
+
+  .main-Banner {
+    height: 33rem;
+  }
+
+  .nav-link {
+    padding: 1rem 1rem;
+  }
+
+  .Full-form-box {
+    margin-top: -10rem;
+  }
+
+  /* -------04 - Login --------- */
+  .login-page .full-form-row {
+    margin-top: -6rem;
+  }
+
+  .login-page .round-red {
+    position: absolute;
+    top: 79px;
+    right: 70px;
+    height: 180px;
+  }
+
+  /* ------ My Profile ------ */
+  .my-profile .mail-chat-div,
+  .my-profile .per-info-detail {
+    width: 50%;
+    margin: 1rem;
+  }
+
+  /* -------Edit Profile ----- */
+  .Full-form-box {
+    margin-top: -10rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+  .Full-form-box {
+    margin-top: -0rem;
+  }
+
+  /* -------04 - Login --------- */
+  .login-page .full-form-row {
+    margin-top: 2rem;
+  }
+
+  .login-page .round-red {
+    display: none;
+  }
+
+  /* ----- 05 - Job Listing ------ */
+  .job-list .DRP-row {
+    overflow-x: scroll !important;
+    overflow-x: hidden;
+  }
+
+  .job-list .DRP-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ----- 07 - Home Page ------ */
+  .HomePage .Location-Box .form-control {
+    margin-bottom: 2rem;
+  }
+  .HomePage .job-content {
+    padding-left: 0rem;
+    padding-top: 1rem;
+  }
+
+  /* ----- 13 - My Profile ------ */
+  .my-profile .send-mail-bg a {
+    padding: 1rem;
+  }
+
+  /* ----- Edit Profile ------ */
+  .Full-form-box {
+    margin-top: -0rem;
+  }
+
+  .Ranking .HomePage .OVERALLSCORE-btn {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 8px;
+  }
+  /* =================== Navbar =================== */
+
+  .nav-menu {
+    position: absolute;
+    left: -110%;
+    top: 0;
+    /* flex-direction: column; */
+    background-color: #fff;
+    /* border-top: 8px solid var(--color-purple); */
+    width: 50%;
+    /* text-align: center; */
+    transition: 0.8s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    padding: 2rem;
+    height: 100vh;
+    display: block;
+    /* padding-top: 150px; */
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item {
+    text-align: start;
+  }
+  .nav-link {
+    margin: 0.5rem 0;
+    text-align: start;
+    color: var(--color-blue);
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .hamburgerr {
+    display: block;
+    cursor: pointer;
+    text-align: end;
+    padding-bottom: 2rem;
+  }
+  .hamburgerr > img {
+    transition: 0.5s;
+  }
+  .hamburgerr > img:hover {
+    transform: rotate(180deg);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerr.active .bar:nth-child(1),
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .hamburgerr.active .bar:nth-child(3),
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-icon a img {
+    padding: 0;
+  }
+  .nav-menu li .active-nav::before {
+    display: none;
+  }
+  .nav-blacklayer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  .login-btn a {
+    margin: 1rem;
+  }
+
+  .footer-menu {
+    display: block;
+  }
+
+  .user-profile .dropdown-toggle::after {
+    display: none;
+  }
+
+  .user-profile .dropdown-menu {
+    top: 90%;
+    left: -35% !important;
+    width: 110px;
+  }
+
+  .nav-menu li a:hover::after {
+    display: none;
+  }
+
+  .login-btn a {
+    margin-left: 1rem;
+  }
+
+  /* ----------------- 06 - Home ----------------- */
+  .HomePage .jobCard-content {
+    width: 100%;
+  }
+  .HomePage .userImg::before {
+    height: 130px;
+  }
+  .HomePage .JobCard:last-child .userImg::before {
+    height: 0;
+  }
+  .HomePage .Network-Jobs {
+    margin-top: 4rem;
+  }
+
+  /* ----------------- 09 - Ranking ----------------- */
+  .Ranking .main-UnivercityRanking {
+    padding: 4rem 0;
+  }
+
+  .Right-Block {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .right-nav .search {
+    top: -5px;
+    right: 100%;
+  }
+
+  .right-nav .search:focus {
+    width: 20rem;
+    box-shadow: none;
+    border: 1px solid rgba(85, 85, 85, 40%);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .nav-menu {
+    width: 70%;
+  }
+  .container14 {
+    width: 96%;
+  }
+
+  .right-nav .expandright {
+    right: -5rem;
+  }
+
+  /* ------Footer ------- */
+  .footer-logo-content .footer-logo {
+    width: 24rem;
+  }
+
+  /* -----04 - Login ------ */
+  .login-page .login-form-bg {
+    padding: 1.4rem;
+  }
+
+  .login-page .main-Banner {
+    height: 18vh;
+  }
+
+  /* ----------------- 06 - Home ----------------- */
+  .HomePage .UniverSitytable-header {
+    padding: 2rem 1rem;
+  }
+  .HomePage .TableData-row {
+    padding: 1rem 0;
+  }
+
+  /* --------05 - Job Listing ------ */
+  .job-list .apply-job-border .education-logo {
+    width: 12%;
+  }
+
+  /* ------------06 - Job Details ---------- */
+  .job-details .job-decription-banner {
+    padding: 0;
+  }
+
+  .job-details .job-desciption {
+    padding: 1rem;
+  }
+
+  /* -------13 - My Profile ------- */
+  .my-profile .main-Banner .employee h2 {
+    font-size: 2.6rem !important;
+  }
+
+  .my-profile .scores-tag li p {
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* ------18 - Edit Profile ------ */
+  .edit-profile .cvv-box {
+    height: 12rem;
+    width: 14rem;
+    padding: 1rem;
+  }
+
+  .edit-profile .needs-validation .form-control {
+    padding: 1rem;
+  }
+
+  .edit-profile .selectize-input .item {
+    padding: 0.6rem;
+  }
+
+  .edit-profile .form-bg {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* -------04 - Login --------- */
+  .login-page .full-form-row {
+    margin-top: 2rem;
+  }
+}

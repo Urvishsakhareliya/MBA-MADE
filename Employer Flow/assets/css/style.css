@@ -1,0 +1,2095 @@
+/* 
+------------------------------------------------------
+              --- TABLE OF CONTENT ---
+---------------------------------------------------------
+
+  01.  Fonts
+  02.  Global CSS
+  03.  Navbar
+  04.  Login
+  05.  Signup
+  06.  Dashbord
+  07.  Post New JOb
+  08.  Manage Job
+  09.  Job Details
+  10.  Applicant Detail
+  11.  Sortlisted Resumers
+  12.  Sortlisted Resumers
+  13.  Company Profile
+  14.  Company Profile View
+  15.  Packages
+  16.  Messages
+  17.  Notifications
+  18.  Change Password
+   
+--------------------------------------------------------
+*/
+
+/* 
+============================================================= 
+                      01 - Fonts
+============================================================= 
+*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap'); */
+
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v15-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v15-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v15-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/poppins-v15-latin-regular.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v15-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v15-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v15-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v15-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v15-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/poppins-v15-latin-500.svg#Poppins")
+      format("svg"); /* Legacy iOS */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v15-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v15-latin-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v15-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v15-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v15-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/poppins-v15-latin-600.svg#Poppins")
+      format("svg"); /* Legacy iOS */
+}
+/* cormorant-regular - latin */
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/cormorant-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/cormorant-v11-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/cormorant-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/cormorant-v11-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/cormorant-v11-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/cormorant-v11-latin-regular.svg#Cormorant") format("svg"); /* Legacy iOS */
+}
+/* cormorant-500 - latin */
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/cormorant-v11-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/cormorant-v11-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/cormorant-v11-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/cormorant-v11-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/cormorant-v11-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/cormorant-v11-latin-500.svg#Cormorant") format("svg"); /* Legacy iOS */
+}
+/* cormorant-600 - latin */
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/cormorant-v11-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/cormorant-v11-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/cormorant-v11-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/cormorant-v11-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/cormorant-v11-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/cormorant-v11-latin-600.svg#Cormorant") format("svg"); /* Legacy iOS */
+}
+
+/* 
+============================================================= 
+                      02 - Global CSS
+=============================================================   
+*/
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+}
+
+:root {
+  --text-black: #090909;
+  --color-DarkBlue: #04003f;
+  --color-lightBlue: #354a59;
+  --color-backlight: #e4e7f1;
+  --color-blue: #2e28aa;
+  --color-white: #fff;
+  --color-red: #f4492c;
+  --color-lightGrey: #d6d6d6;
+  --border-grey: #585858;
+  --color-LightRed: #ffe4d5;
+  --color-Dark: #090909;
+  --Liner-Gradient: linear-gradient(to right, #2e1fa7, #2e50b5);
+  --body-color: #f5f6fa;
+  --input-color: rgba(37, 59, 128, 0.3);
+  --input-border: #dcdfe9;
+  --border-radius-10: 10px;
+  --border-radius-5: 5px;
+  --border: 1px solid var(--color-LightRed);
+  --color-orange: #f4492c;
+}
+
+.container14 {
+  width: 84%;
+  margin: 0 auto;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+a:hover {
+  color: var(--text-black);
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 3.5rem !important;
+  line-height: 1.5em;
+}
+
+h5 {
+  font-size: 2.4rem !important;
+  line-height: 1.5em;
+}
+
+h6 {
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+
+.body-color {
+  background-color: var(--body-color);
+}
+
+.login-btn a {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 0.8rem 3rem;
+  border-radius: var(--border-radius-5);
+  font-weight: 600;
+}
+
+.btn-red {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-weight: 600;
+  border-radius: var(--border-radius-5);
+}
+
+.sec-margin {
+  margin-top: 4rem;
+}
+
+.Form-head-bg {
+  background-color: rgba(37, 59, 128, 16%);
+  color: var(--text-DarkGrey);
+  position: relative;
+  padding: 0.5rem 2rem;
+  border-radius: var(--border-radius-5);
+}
+
+.Form-head-bg::after {
+  content: "";
+  border: 4px solid var(--color-blue);
+  position: absolute;
+  height: 100%;
+  border-radius: 2rem;
+  left: 0;
+  top: 0;
+}
+
+/* 
+============================================================= 
+                      03 - Navigation
+=============================================================  
+*/
+.main-header {
+  padding: 1rem;
+}
+
+.navbar {
+  display: block;
+  padding: 0;
+  background-color: var(--color-white);
+}
+.nav-row {
+  padding: 1rem 0 0 0;
+  background-image: var(--Liner-Gradient);
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-link {
+  font-weight: 400;
+  color: var(--color-white);
+  padding: 1rem 0 2rem 0;
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.nav-link:focus {
+  color: var(--color-red) !important;
+}
+
+.nav-link:hover {
+  color: var(--color-red);
+}
+
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  left: 0%;
+  bottom: 0;
+  height: 5px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.nav-menu li a:hover::after {
+  background-color: var(--color-red);
+  transform: scaleX(1) !important;
+  opacity: 1;
+}
+
+.nav-menu > li > .active-nav {
+  color: var(--color-red) !important;
+}
+
+.nav-menu li .active-nav::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: var(--color-red) !important;
+}
+
+.nav-icon {
+  width: 20px;
+  margin: 0 1rem;
+}
+
+/* Search */
+.header-search {
+  width: 70%;
+}
+
+.header-search .form-control {
+  font-size: 1.6rem;
+  padding: 1rem 1rem 1rem 4rem;
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius-5) !important;
+}
+.header-search .form-control:focus {
+  box-shadow: none;
+  border-color: var(--color-blue);
+}
+
+.header-search .input-search-icon {
+  position: absolute;
+  top: 47%;
+  left: 12px;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+/* Drop Down */
+.user-profile .dropdown-menu {
+  width: 130px;
+  font-size: 1.6rem;
+  border-radius: var(--border-radius-5);
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile .dropdown-toggle {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.user-profile .dropdown-toggle::after {
+  margin-left: 0.855em;
+  color: var(--color-blue);
+}
+
+.user-profile .dropdown-toggle .avtar-image {
+  height: 6rem;
+}
+
+.user-profile .dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--color-blue);
+}
+
+.badge {
+  position: absolute;
+  top: -10%;
+  right: -20%;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.selected-name {
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.footer-bg {
+  background-color: var(--color-blue);
+  padding: 1rem;
+}
+
+.main-Banner {
+  background-image: url(../images/banner.jpg);
+  height: 35rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* ============================================================
+                        04 - Login
+================================================================ */
+.login-page .login-form-bg {
+  background-color: var(--color-white);
+  padding: 2.6rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 2rem;
+  /* margin-top: -14rem; */
+  position: relative;
+}
+
+.login-page .full-form-row {
+  margin-top: -14rem;
+  /* position: relative; */
+}
+
+.login-page .round-red {
+  position: absolute;
+  top: 140px;
+  right: 440px;
+}
+
+.login-page .login-form-bg h4 {
+  font-weight: bold;
+}
+
+.login-page .login-form-bg p {
+  font-weight: 600;
+}
+
+.login-page .login-form-bg form .form-control {
+  padding: 1rem 1rem 1rem 5rem;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  border-color: var(--input-border);
+  background-color: transparent;
+  border-radius: var(--border-radius-5);
+}
+
+.login-page .login-form-bg form .form-control::placeholder {
+  color: var(--input-color);
+  font-weight: bold;
+}
+
+.login-page .login-form-bg .form-check .form-check-input:checked {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+.login-page .login-form-bg form input:focus {
+  box-shadow: none;
+  border-color: var(--color-blue);
+}
+
+.login-page .login-form-bg form .form-inputs {
+  position: relative;
+}
+
+.login-page .login-form-bg form .form-inputs i {
+  font-size: 2rem;
+  color: var(--color-blue);
+  position: absolute;
+  top: 2rem;
+  left: 1.6rem;
+}
+
+.login-page .login-form-bg .forgot-password a {
+  color: var(--input-color);
+}
+.login-page .login-form-bg .forgot-password a:hover {
+  color: var(--color-blue);
+}
+
+.login-page .login-form-bg .sign-in-google a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--input-border);
+  border-radius: var(--border-radius-5);
+  padding: 1rem 1.4rem;
+  font-size: 1.4rem;
+}
+
+.login-page .login-form-bg .sign-in-linkedin a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--input-border);
+  border-radius: var(--border-radius-5);
+  padding: 1rem 1.4rem;
+  font-size: 1.4rem;
+}
+
+.login-page .login-form-bg .sign-in-google a img,
+.login-page .login-form-bg .sign-in-linkedin a img {
+  margin-right: 0.6rem;
+}
+
+.login-page .login-form-bg .sign-in-google a:hover,
+.login-page .login-form-bg .sign-in-linkedin a:hover {
+  border-color: var(--color-blue);
+}
+
+.login-page .login-form-bg .submit-btn a {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--border-radius-5);
+  outline: none;
+  border: none;
+}
+
+.login-page .login-form-bg .Create-account p a {
+  color: var(--color-blue);
+}
+/* ============================================================= 
+                      06 - Dashbord
+=============================================================== */
+/* Scetion 1 */
+
+.Dashbord .DashbordPart-row {
+  margin: 7rem 0 0rem 0;
+}
+
+.Dashbord .Dashbord-Items {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-10);
+  border: var(--border);
+  padding: 1.5rem 2rem;
+  /* margin-bottom: 2rem; */
+}
+
+.Dashbord .Dashbord-Items h5 {
+  color: var(--color-DarkBlue);
+}
+
+.Dashbord .Dashbord-Items p {
+  color: var(--color-lightBlue);
+}
+
+.Dashbord .Dashbord-ItemsImg {
+  height: 8.5rem;
+  width: 8.5rem;
+  background-color: var(--color-LightRed);
+  border-radius: var(--border-radius-5);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.Dashbord .RecentActivities {
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: var(--border-radius-10);
+  padding: 3rem 2rem;
+}
+
+.Dashbord .RecentActivities h5 {
+  color: var(--color-Dark);
+  /* margin-bottom: 2rem; */
+}
+
+.Dashbord .Activities-UL {
+  padding-top: 2rem;
+  height: 60rem;
+  overflow-y: scroll;
+}
+
+.Dashbord .VacancyHeading {
+  margin-bottom: 4rem;
+}
+
+.Dashbord .Activities-items {
+  margin-bottom: 2rem;
+}
+
+.Dashbord .Activities-img {
+  width: 8rem;
+  height: 6rem;
+  border: 1px solid #f3eaff;
+  border-radius: var(--border-radius-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  margin-right: 1rem;
+}
+
+.Dashbord .ActivitiesContent {
+  font-size: 1.4rem;
+}
+
+.Dashbord .ActivitiesContent p {
+  color: var(--color-lightBlue);
+  font-weight: 500;
+}
+
+.Dashbord .ActivitiesContent span {
+  color: #aeaeae;
+  font-weight: 500;
+}
+
+.Dashbord .DownArrow {
+  position: absolute;
+  bottom: -1rem;
+  right: 2rem;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  border-bottom: var(--border);
+  cursor: pointer;
+}
+
+.Dashbord .Activities-UL::-webkit-scrollbar {
+  display: none;
+}
+
+.Dashbord .ios-switch {
+  display: none;
+  position: relative;
+}
+
+.Dashbord .ios-switch + label .small {
+  font-size: 0.8em;
+  color: #999;
+  line-height: 1.5em;
+  display: block;
+}
+
+.Dashbord .ios-switch + label {
+  display: block;
+  padding: 0.5rem;
+  text-align: left !important;
+  color: #707070;
+  font-weight: 500;
+}
+
+.Dashbord .toggle span {
+  color: #707070;
+  font-weight: 500;
+}
+
+.Dashbord .ios-switch + label span.sw {
+  display: inline-block;
+  width: 4.6rem;
+  height: 2rem;
+  float: right;
+  border-radius: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 2px solid #e3e3e3;
+  background-color: #dcdfeb;
+  transition: all ease 300ms;
+}
+
+.Dashbord .ios-switch + label span.sw:before {
+  content: "";
+  position: absolute;
+  background-color: #959595;
+  margin-top: -3px;
+  margin-left: -2px;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 15px;
+  transition: all ease 300ms;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Dashbord .ios-switch:checked + label span:before {
+  margin-left: 2rem;
+  background-color: var(--color-red);
+}
+.Dashbord .ios-switch:checked + label span.sw {
+  border: 2px solid var(--color-LightRed);
+  background-color: var(--color-LightRed);
+}
+
+/* Month Drop Down */
+.Dashbord .MonthDrop {
+  text-align: -webkit-right;
+}
+
+.Dashbord .MonthDrop .dropdown {
+  width: 15rem;
+  /* height: 5rem; */
+  border: 1px solid #ebdcff;
+  padding: 0 1rem 0 2rem;
+  border-radius: 5rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.Dashbord .MonthDrop .dropdown .ri-arrow-down-s-line {
+  color: var(--color-red);
+  font-size: 3rem;
+}
+
+.Dashbord .MonthDrop .dropdown input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.Dashbord .MonthDrop .dropdown .options {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  background: var(--color-white);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: var(--border-radius-10);
+  overflow: hidden;
+  display: none;
+  z-index: 1;
+  text-align: center;
+}
+
+.Dashbord .MonthDrop .dropdown.active .options {
+  display: block;
+}
+
+.Dashbord .MonthDrop .dropdown .options div {
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+}
+
+.Dashbord .MonthDrop .dropdown .options div:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+/* --------------- Charts ------------- */
+.Dashbord .chart-desc {
+  margin: 4rem auto 0 auto;
+  width: 60%;
+}
+
+.Dashbord .chart .color-circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.Dashbord .color1 {
+  background-color: var(--color-blue);
+}
+
+.Dashbord .color2 {
+  background-color: #00b050;
+}
+
+.Dashbord .color3 {
+  background-color: var(--color-red);
+}
+
+/* ==================================================================
+                        07 - post-new-job
+====================================================================*/
+.post-new-job .new-job-form-bg {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-10);
+  border: 1px solid #feece9;
+  padding: 2.6rem;
+}
+
+.post-new-job .new-job-form-bg .post-job-head p {
+  color: var(--color-red);
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.post-new-job .new-job-form-bg .input-field-head p {
+  color: var(--color-lightBlue);
+  font-weight: 500;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.post-new-job .new-job-form-bg .input-field-head input,
+.post-new-job .new-job-form-bg .input-field-head textarea {
+  color: var(--color-lightBlue);
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem 1.4rem;
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius-5);
+  width: 100%;
+  /* border: solid 1px var(#f9f9f9); */
+  outline: none;
+  margin-top: 0.8rem;
+}
+
+.post-new-job .new-job-form-bg .input-field-head input {
+  padding: 1.8rem 1.4rem;
+}
+
+.post-new-job .new-job-form-bg .input-field-head input:focus,
+.post-new-job .new-job-form-bg .input-field-head textarea:focus {
+  border: 1px solid var(--color-blue);
+  outline: none;
+}
+
+.post-new-job .new-job-form-bg .input-field-head input::placeholder,
+.post-new-job .new-job-form-bg .input-field-head textarea::placeholder {
+  color: rgba(112, 112, 112, 54%);
+  font-weight: 600;
+}
+
+.post-new-job .new-job-form-bg .input-field-select select {
+  border: none;
+  font-weight: 500;
+  padding: 1rem;
+  color: rgba(112, 112, 112, 54%);
+  font-weight: 600;
+  background-color: #f9f9f9;
+  width: 100%;
+  border-radius: var(--border-radius-5);
+  outline: none;
+  border: solid 1px transparent;
+}
+
+.post-new-job .new-job-form-bg .input-field-select select option {
+  color: #000;
+}
+
+.post-new-job .new-job-form-bg .input-field-select select option:hover {
+  background-color: red !important;
+}
+
+.post-new-job .new-job-form-bg .input-field-select select:focus-visible {
+  border: solid 1px var(--color-blue);
+}
+
+.post-new-job .new-job-form-bg .search-location {
+  position: relative;
+}
+
+.post-new-job .new-job-form-bg .search-location a {
+  border: solid 1px var(--color-red);
+  border-radius: var(--border-radius-5);
+  padding: 0.5rem 1.2rem;
+  color: var(--color-red);
+  position: absolute;
+  right: 2rem;
+  bottom: 1.2rem;
+}
+
+.post-new-job .new-job-form-bg .search-location a:hover {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+
+.post-new-job .new-job-form-bg .input-field-head .label p {
+  background-color: rgba(46, 31, 167, 10%);
+  color: #2e1fa7;
+  padding: 0.6rem 1rem;
+  font-size: 1.4rem;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.post-new-job .new-job-form-bg .input-field-head .label .plus {
+  border: 1px solid rgba(46, 31, 167, 10%);
+  color: #2e1fa7;
+  padding: 0.3rem 1rem;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.post-new-job .new-job-form-bg .submit .btn-red {
+  padding: 0.8rem 2rem;
+}
+
+/* ==================================================================
+                            08.  Manage JOb
+====================================================================*/
+.manage-job .input-field-select select {
+  border: none;
+  font-weight: 500;
+  padding: 1rem;
+  color: var(--color-orange);
+  font-weight: 600;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius-5);
+  outline: none;
+  border: solid 1px #e3e6ea;
+  margin-left: 0.6rem;
+}
+
+.manage-job .input-field-select select option {
+  color: var(--color-lightBlue);
+}
+
+.manage-job .input-field-select select option:hover {
+  background-color: red !important;
+}
+
+/* ------ Manage Job Table ------ */
+.manage-job .job-table table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.manage-job .job-table table tbody {
+  background-color: var(--color-white);
+}
+.manage-job .job-table .tbl-header {
+  background-color: rgba(244, 73, 44, 10%);
+  border-radius: 10px 10px 0 0;
+}
+
+.manage-job .job-table .tbl-content {
+  height: 427px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 10px 10px !important;
+}
+.manage-job .job-table .tbl-content::-webkit-scrollbar {
+  display: none;
+}
+
+.manage-job .job-table table th {
+  padding: 1.2rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.manage-job .job-table table td {
+  padding: 1.2rem;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #000;
+}
+
+.manage-job .job-table tbody .sr-no,
+.manage-job .job-table tbody .title h6 {
+  color: #334756;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.manage-job .job-table tbody .title span {
+  color: #515151;
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
+
+.manage-job .job-table tbody .shortlist {
+  color: var(--color-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.manage-job .job-table tbody .renew {
+  color: #1da44a;
+  font-weight: 500;
+  font-size: 1.6rem;
+  /* margin: 0 0.5rem; */
+}
+.manage-job .job-table tbody .active {
+  color: var(--color-red);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 0 0.5rem;
+}
+
+/* ==================================================================
+                            09.  Job Details
+====================================================================*/
+.job-details .job-desciption {
+  border: solid 1px #cbcbcb;
+  padding: 2rem;
+  border-radius: 1.6rem;
+}
+
+.job-details .job-decription-banner {
+  background-color: var(--color-white);
+  padding: 1.6rem;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-10);
+}
+
+.job-details .Total-app-head h6 {
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.job-details #TotalApp {
+  height: 75rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+}
+
+.job-details #TotalApp::-webkit-scrollbar {
+  display: none;
+}
+
+.job-details .responsibility-list li {
+  position: relative;
+  padding-left: 3rem;
+  margin-top: 0.5rem;
+}
+
+.job-details .responsibility-list li::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-image: url(../images/check-img.svg);
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.job-details .skills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.job-details .skills li {
+  margin-top: 2.6rem;
+}
+
+.job-details .skills li a {
+  background-color: #dcdfeb;
+  border: solid 1px rgba(4, 0, 63, 0.3);
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius-5);
+  margin-right: 1rem;
+  color: var(--color-DarkBlue);
+  font-weight: 600;
+}
+
+.job-details #similarJobs {
+  height: 48rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+.job-details .Job-reuired h6 {
+  font-size: 1.6rem !important;
+}
+
+.job-details .Job-reuired p {
+  font-size: 1.4rem !important;
+}
+
+.job-details .job-decription-banner .times p {
+  font-size: 1.2rem;
+}
+
+.job-details #similarJobs::-webkit-scrollbar {
+  display: none;
+}
+
+.job-details .apply-job-border .times p {
+  border: dashed 1px var(--color-orange);
+  color: var(--color-orange);
+  padding: 0.3rem 1rem;
+  border-radius: var(--border-radius-5);
+  display: inline-block;
+}
+
+.job-details .job-desciption .responsibility-list li {
+  position: relative;
+  padding-left: 3rem;
+  margin-top: 0.5rem;
+}
+
+.job-details .job-desciption .responsibility-list li::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-image: url(../images/check-img.svg);
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.job-details .job-desciption {
+  background-color: var(--color-white);
+}
+
+.job-details .round-Down img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.job-details .resume-list {
+  padding: 1.2rem;
+  background-color: var(--color-white);
+  border: solid 1px #d9ecff;
+  border-radius: var(--border-radius-10);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.job-details .resume-desc {
+  margin-left: 2.5rem;
+  width: 100%;
+}
+
+.job-details .resume-desc h5 {
+  color: var(--color-lightBlue);
+  font-weight: 600;
+}
+
+.job-details .designation p {
+  color: var(--color-red);
+  font-weight: 500;
+}
+
+.job-details .designation span {
+  color: #515151;
+}
+
+.job-details .skills .skills-item {
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(46, 31, 167, 10%);
+  display: inline-block;
+  border-radius: var(--border-radius-5);
+  font-weight: 500;
+  color: var(--color-blue);
+  margin-right: 0.6rem;
+}
+
+.job-details .Compneypost p {
+  color: var(--color-lightBlue);
+  border: 1px solid #caccd3;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: var(--border-radius-5);
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+}
+
+/* ==================================================================
+                        10.  Applicant Detail
+====================================================================*/
+.Application-details .scores-tag li p {
+  font-weight: 600;
+  background-color: rgba(46, 73, 179, 20%);
+  border-radius: var(--border-radius-5);
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  color: var(--color-orange);
+}
+.Application-details .scores-tag li {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.Application-details .resume-btn a {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius-5);
+}
+
+.Application-details .per-info-detail {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-10);
+  border: 1px solid #d9ecff;
+  padding: 2rem;
+}
+
+.Application-details .per-info-detail ul li p {
+  color: #334756;
+  font-weight: 700;
+}
+
+.Application-details .per-info-detail ul li span {
+  color: rgba(51, 71, 86, 50%);
+  font-weight: 700;
+}
+
+.Application-details .send-mail-bg a {
+  border: solid 1px var(--color-orange);
+  border: 1px solid #d9ecff;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--border-radius-10);
+  display: flex;
+  align-items: center;
+}
+
+.Application-details .send-mail-bg a:hover {
+  border: solid 1px var(--color-orange);
+}
+
+.Application-details .save-job {
+  background-color: #feece9;
+  padding: 0.8rem 2rem;
+  border-radius: var(--border-radius-5);
+  margin-left: 1.2rem;
+  color: var(--color-orange);
+}
+
+.Application-details .personal-info-content {
+  height: 50rem;
+  overflow-y: scroll;
+}
+
+.Application-details .personal-info-content::-webkit-scrollbar {
+  display: none;
+}
+
+.post-new-job .cvv-box {
+  border: dashed 1px #515151;
+  height: 12rem;
+  width: 18rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+/* ==================================================================
+                      11.  Sortlisted Resumers
+====================================================================*/
+
+.Sortlisted .round-Down img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.Sortlisted .resume-list {
+  padding: 2rem;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-10);
+  border: var(--border);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.Sortlisted .resume-desc {
+  margin-left: 2.5rem;
+  width: 100%;
+}
+
+.Sortlisted .resume-desc h5 {
+  color: var(--color-lightBlue);
+  font-weight: 600;
+}
+
+.Sortlisted .designation {
+  margin: 1rem 0;
+}
+
+.Sortlisted .designation h6 {
+  color: var(--color-red);
+}
+
+.Sortlisted .designation span {
+  color: #515151;
+}
+
+.Sortlisted .skills .skills-item {
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(46, 31, 167, 10%);
+  display: inline-block;
+  border-radius: var(--border-radius-5);
+  font-weight: 500;
+  color: var(--color-blue);
+  margin-right: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.Sortlisted .Compneypost p {
+  color: var(--color-lightBlue);
+  border: 1px solid #caccd3;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: var(--border-radius-5);
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+}
+
+.Sortlisted .resume-colume {
+  margin-bottom: 2rem;
+}
+
+/* ==================================================================
+                      12.  Sortlisted Resumers
+====================================================================*/
+.SortlistedResumers .DepartmentManager .ItDepartment h5 {
+  color: var(--color-Dark);
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.SortlistedResumers .DepartmentManager .FullTime {
+  color: var(--color-red);
+  border: 1.5px dashed var(--color-red);
+  padding: 0.2rem 0.8rem;
+  border-radius: var(--border-radius-5);
+}
+.SortlistedResumers .Department-Details {
+  color: var(--color-DarkBlue);
+  margin-top: 2rem;
+}
+
+.SortlistedResumers .DepartmentAccordion {
+  margin-top: 2rem;
+}
+
+.SortlistedResumers .DepartmentAccordion .accordion-button {
+  font-size: 2rem;
+  color: var(--color-DarkBlue);
+  background-color: transparent;
+}
+
+.SortlistedResumers .DepartmentAccordion .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.SortlistedResumers .DepartmentAccordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.SortlistedResumers .DepartmentAccordion .accordion-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--input-border);
+}
+
+.SortlistedResumers .DepartmentAccordion .accordion-button::after {
+  display: none;
+}
+
+.SortlistedResumers .DepartmentAccordion .accordion-button .plusimg {
+  transition: transform 0.2s ease-in-out;
+  height: 2.5rem;
+}
+
+.SortlistedResumers
+  .DepartmentAccordion
+  .accordion-button:not(.collapsed)
+  .plusimg {
+  transform: rotate(45deg);
+}
+
+/* ==================================================================
+                    14. Company Profile View
+====================================================================*/
+.main-Banner2 {
+  padding: 3rem 0;
+  background-color: var(--color-white) !important;
+}
+
+.company-pro-view .scores-tag li p {
+  font-weight: 600;
+  background-color: rgba(46, 73, 179, 20%);
+  border-radius: var(--border-radius-5);
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  color: var(--color-blue);
+}
+
+.company-pro-view .post-job-head p {
+  color: var(--color-red);
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+/* ==================================================================
+                            15. Packges
+====================================================================*/
+.packges .curve-bg {
+  background-image: var(--Liner-Gradient);
+  padding: 4rem;
+  position: relative;
+}
+
+.packges .curve-bg:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-image: var(--Liner-Gradient);
+  padding: 3rem;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 100%;
+  height: 100px;
+}
+
+.packges .ios-switch {
+  display: none;
+  position: relative;
+}
+
+.packges .ios-switch + label .small {
+  font-size: 0.8em;
+  color: #999;
+  line-height: 1.5em;
+  display: block;
+}
+
+.packges .ios-switch + label {
+  display: block;
+  padding: 0.5rem;
+  text-align: left !important;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.packges .toggle span {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.packges .ios-switch + label span.sw {
+  display: inline-block;
+  width: 4.6rem;
+  height: 2rem;
+  float: right;
+  border-radius: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 2px solid #e3e3e3;
+  background-color: #dcdfeb;
+  transition: all ease 300ms;
+}
+
+.packges .ios-switch + label span.sw:before {
+  content: "";
+  position: absolute;
+  background-color: #959595;
+  margin-top: -3px;
+  margin-left: -2px;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 15px;
+  transition: all ease 300ms;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.packges .ios-switch:checked + label span:before {
+  margin-left: 2.2rem;
+  background-color: var(--color-red);
+}
+.packges .ios-switch:checked + label span.sw {
+  border: 2px solid var(--color-LightRed);
+  background-color: var(--color-LightRed);
+}
+
+/* --- Cards ------ */
+.packges .card-row {
+  z-index: 500;
+}
+.packges .Trail-card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 2rem;
+  /* height: 71rem; */
+  border: var(--border);
+}
+
+.packges .Trail-card .card-head h5 {
+  font-weight: 600;
+  border-bottom: 4px solid var(--color-red);
+  display: inline-block;
+}
+
+.packges .Trail-card .card-price sup,
+.packges .Trail-card .card-price span {
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #848891;
+}
+
+.packges .Trail-card .card-price h1 {
+  font-weight: 600;
+  color: var(--color-blue);
+  font-size: 6rem;
+}
+
+.packges .Trail-card .started-btn a {
+  font-weight: 600;
+  border: solid 3px var(--color-orange);
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  color: var(--color-orange);
+}
+
+.packges .Trail-card .current-btn a {
+  font-weight: 600;
+  background-color: var(--color-orange);
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.packges .Trail-card .work-details ul li {
+  color: #565b68;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-left: 4rem;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.packges .Trail-card .work-details ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background-image: url(../images/true.svg);
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 3rem;
+}
+
+.packges .Trail-card .date-label p {
+  background-color: var(--color-blue);
+  padding: 0.6rem 1rem;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 600;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+/* ==================================================================
+                        16.  Messages
+====================================================================*/
+#frame {
+  width: 100%;
+  border-radius: var(--border-radius-10);
+}
+
+#frame #sidepanel {
+  height: 100%;
+  background: var(--color-white);
+  border-radius: var(--border-radius-10);
+  color: #272727;
+  overflow-y: scroll;
+  position: relative;
+  height: 70rem;
+}
+
+#frame #sidepanel::-webkit-scrollbar {
+  display: none;
+}
+
+#frame #sidepanel #contacts {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#frame #sidepanel #contacts.expanded {
+  height: calc(100% - 334px);
+}
+#frame #sidepanel #contacts::-webkit-scrollbar {
+  display: none;
+}
+
+#frame #sidepanel #contacts ul {
+  padding: 2rem;
+}
+
+#frame #sidepanel #contacts ul li.contact {
+  position: relative;
+  padding: 2rem 0;
+  font-size: 0.9em;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(53, 74, 89, 70%);
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap span.online {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #2ecc71;
+  border: 1px solid var(--color-white);
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap img {
+  width: 5.5rem;
+  border-radius: 50%;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta .name {
+  font-weight: bold;
+  color: var(--color-lightBlue);
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta .hour {
+  font-weight: 500;
+  color: rgba(53, 74, 89, 70%);
+  font-size: 1.4rem;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {
+  margin: 0 !important;
+  padding: 0 0 1px;
+  color: rgba(53, 74, 89, 70%);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -moz-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+#frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {
+  position: initial;
+  border-radius: initial;
+  background: none;
+  border: none;
+  padding: 0 2px 0 0;
+  margin: 0 0 0 1px;
+  opacity: 0.5;
+}
+
+#frame .content {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-10);
+  height: 70rem;
+}
+
+#frame .content .contact-profile {
+  background: #efefef;
+  border-top-left-radius: var(--border-radius-10);
+  border-top-right-radius: var(--border-radius-10);
+  padding: 0rem 3rem;
+  color: var(--color-lightBlue);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  height: 6rem;
+  margin-bottom: 0.2remrem;
+}
+
+#frame .content .contact-profile ul li {
+  opacity: 60%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#frame .content .contact-profile ul {
+  width: 30%;
+}
+
+#frame .content .contact-profile ul li:hover {
+  opacity: 100%;
+}
+
+#frame .content .messages {
+  height: 58rem;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#frame .content .messages ul li img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  float: left;
+}
+
+#frame .content .messages ul li p {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius-5);
+  line-height: 130%;
+}
+
+#frame .content .messages::-webkit-scrollbar {
+  display: none;
+}
+
+#frame .content .messages::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#frame .content .messages ul {
+  padding: 0 2rem;
+}
+
+#frame .content .messages ul li {
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin: 2rem;
+  width: calc(100% - 25px);
+  font-size: 0.9em;
+}
+
+#frame .content .messages ul li:last-child {
+  margin-bottom: 20px;
+}
+
+#frame .content .messages ul li.sent {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+#frame .content .messages ul li.sent img {
+  margin: 0 0 0 2rem;
+}
+
+#frame .content .messages ul li.sent p {
+  background: var(--color-red);
+  color: var(--color-white);
+  font-weight: 600;
+  position: relative;
+}
+
+.content .ChatDate {
+  color: var(--color-lightBlue);
+  font-weight: 500;
+}
+
+.content .ChatDate .DateBorder {
+  width: 8rem;
+  height: 1px;
+  background-color: var(--color-lightBlue);
+  opacity: 0.5;
+}
+
+#frame .content .messages ul li.sent p::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 8px solid var(--color-red);
+  border-bottom: 8px solid transparent;
+}
+
+#frame .content .messages ul li:last-child {
+  padding-bottom: 2rem;
+}
+
+#frame #sidepanel #contacts ul li.contact:last-child {
+  border: none;
+}
+
+#frame .content .messages ul li.replies {
+  display: flex;
+  align-items: center;
+}
+
+#frame .content .messages ul li.replies img {
+  float: right;
+  margin: 0 2rem 0 0;
+}
+
+#frame .content .messages ul li.replies p {
+  background: #ebebeb;
+  color: var(--color-lightBlue);
+  float: right;
+  position: relative;
+}
+
+#frame .content .messages ul li.replies p::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #ebebeb;
+  border-bottom: 8px solid transparent;
+}
+
+#frame .content .message-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+#frame .content .message-input .wrap {
+  position: relative;
+}
+
+#frame .content .message-input .wrap input {
+  font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+  float: left;
+  border: none;
+  width: 100%;
+  padding: 0 2rem;
+  border-top: 1px solid var(--color-lightBlue);
+  color: #32465a;
+  height: 6rem;
+}
+
+#frame .content .message-input .wrap input:focus {
+  outline: none;
+}
+
+#frame .content .message-input .wrap .ChatSend {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  display: inline-block;
+}
+#frame .content .message-input .wrap .ChatSend a {
+  font-weight: 600;
+  padding: 1rem 3rem;
+  display: inline-block;
+}
+
+/* ==================================================================
+                      17.  Notifications
+====================================================================*/
+
+.Notifications .Notifications-List {
+  padding: 2rem;
+  background-color: var(--color-white);
+  border: 1px solid #d9ecff;
+  border-radius: var(--border-radius-10);
+}
+
+.Notifications .Notifications-List-items {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--input-border);
+}
+
+.Notifications .NotificationsColum:last-child .Notifications-List-items {
+  border-bottom: none;
+}
+
+.Notifications .design-logo {
+  height: 6rem;
+  width: 6rem;
+  padding: 1rem;
+  background-color: var(--color-red);
+  border-radius: var(--border-radius-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Notifications .design-logo img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.Notifications .Notifications-Desc {
+  margin-left: 2.5rem;
+}
+
+.Notifications .Notifications-Desc h6 {
+  color: var(--color-lightBlue);
+  font-weight: bolder;
+}
+
+.Notifications .Notifications-Desc p {
+  color: rgb(53, 74, 89, 60%);
+  font-weight: 500;
+}
+
+.Notifications .Notifications-Desc span {
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+/* ==================================================================
+                      18.  Change Password
+====================================================================*/
+.ChangePassword .new-job-form-bg .input-field-head input {
+  width: 50%;
+  border: 1px solid #f9f9f9;
+}
+
+/* =====================================================================
+                          17 - Message
+========================================================================*/
+
+.footer-Banner {
+  background-image: url(../images/Footer-back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0;
+}
+
+.footer-logo-content {
+  color: var(--color-white);
+}
+
+.footer-logo-content p {
+  margin: 2rem 0;
+}
+
+.social-media {
+  width: 80%;
+}
+
+.footer-logo-content h5 {
+  color: var(--color-white);
+  font-weight: bold;
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+.footer-logo-content h5 > img {
+  margin-top: -2rem;
+}
+
+.footer-logo-content h5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 3px solid var(--color-white);
+  border-radius: 2rem;
+}
+
+.footer-link {
+  margin-bottom: 2rem;
+}
+.footer-link a {
+  font-weight: 500;
+  color: var(--color-white);
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.footer-link a:hover {
+  opacity: 1;
+}
+
+.footer-active {
+  opacity: 1 !important;
+}
+
+.footer-link a > img {
+  margin-right: 0.5rem;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.footer-email {
+  background-color: var(--text-white);
+  /* padding: 0.8rem; */
+}
+
+.email-input {
+  background-color: #a1aac8 !important;
+  border: none !important;
+  border-bottom: none !important;
+  border-radius: 5px !important;
+  color: var(--color-white) !important;
+  outline: none !important;
+  font-size: 2rem !important;
+  padding: 1rem 2rem !important;
+  padding-left: 4.5rem !important;
+}
+
+.footer-email {
+  position: relative;
+}
+.footer-email img {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.subscribe-btn {
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  width: auto;
+  margin-left: 1rem;
+  background-color: var(--color-red);
+  color: var(--text-white);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.subscribe-btn p {
+  color: var(--color-white) !important;
+  margin: 0;
+}
+
+.footer-TC a:hover {
+  color: var(--color-DarkBlue);
+}

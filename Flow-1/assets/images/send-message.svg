@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+  <g id="Group_163571" data-name="Group 163571" transform="translate(-6154 2519)">
+    <circle id="Ellipse_170" data-name="Ellipse 170" cx="25.5" cy="25.5" r="25.5" transform="translate(6154 -2519)" fill="#f4492c"/>
+    <g id="Icon_ionic-ios-chatboxes" data-name="Icon ionic-ios-chatboxes" transform="translate(6163.156 -2508.668)">
+      <path id="Path_2528" data-name="Path 2528" d="M31.479,11.981H14.59a2.908,2.908,0,0,0-2.9,2.9v11.76a2.9,2.9,0,0,0,2.9,2.9h9.664a.833.833,0,0,1,.579.244l4.8,4.428c.267.259.709.152.709-.221V30.136c0-.457.29-.6.747-.6h.076a3.172,3.172,0,0,0,3.209-2.9V14.885A2.892,2.892,0,0,0,31.479,11.981Z" transform="translate(-6 -7)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
